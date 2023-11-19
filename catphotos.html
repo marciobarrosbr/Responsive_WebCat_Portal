@@ -1,5 +1,10 @@
-<html>
-    <biody>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charcet="UTF-8">
+        <title>CatPhotoApp</title>
+    </head>
+    <body>
         <main>
             <h1>CatPhotos</h1>
             <section>
@@ -36,17 +41,21 @@
                    <form action="https://freecatphotoapp.com/submit-cat-photo"></form>
                    <fieldset>
                        <legend>Is your cat an indoor or outdoor cat?</legend>
-                       <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor">Indoor</label>
+                       <label><input checked type="radio" id="indoor" name="indoor-outdoor" value="indoor">Indoor</label>
                        <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">Outdoor</label>
                    </fieldset>
                    <fieldset>
                        <legend>What's your cat's personality?</legend>
-                       <input type="checkbox" id="Loving" name="personality"><label for="input">Loving</label>
-                       <input type="checkbox" id="lazy" name="personality"><label for="lazy">Lazy</label>
+                       <input checked type="checkbox" id="loving" name="personality" value="loving"><label for="input">Loving</label>
+                       <input type="checkbox" id="lazy" name="personality" value="lazy"><label for="lazy">Lazy</label>
+                       <input type="checkbox" id="energetic" name="personality" value="energetic"><label  for ="energetic">Energetic</label>
                    </fieldset>
                    <input type="text" name="Catphotourl" placeholder="cat photo URL" required/>
                    <button type="submit">submit</button>
             </section>
         </main>
-    </biody>
+    </body>
+    <footer>
+        <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
 </html>
